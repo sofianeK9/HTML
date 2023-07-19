@@ -1,0 +1,161 @@
+html, body {
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    color: white;
+    
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   z-index: 999;
+}
+
+.header a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight:bold;
+}
+.menu {
+    display: block;
+    /* Afficher le menu par défaut */
+}
+
+.burger {display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.sidebar {
+   position: absolute;
+   top: 500px;
+   margin-left: 25px;
+   flex-basis: 5%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    filter: invert(100%);
+    gap: 25px;
+    transform: scale(1.3);
+}
+
+
+
+.contenu {
+    margin-top: 60px;
+    display: flex;
+    flex-basis: 40%;
+    margin-left: 120px;
+}
+ 
+
+.text {
+    margin-left: 100px;
+    width: 1000px;
+    font-size: large;
+}
+
+h5 {
+    font-size: x-large;
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px ;
+}
+h4 {
+    font-size: xx-large;
+}
+p {
+    font-size: x-large;
+}
+
+.goblin {
+height: auto;
+margin-top: -90px;
+flex-grow: 1;
+
+}
+
+.goblin img {
+    width: 100vw;
+    aspect-ratio: 1;
+    max-width: 950px;
+    object-fit: contain;
+}
+
+
+
+.button  a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    background-color: rgb(132, 185, 132);
+        border-radius: 30px;
+        margin: 30px;
+        margin-left: -10px;
+        padding: 18px;
+}
+
+.button a:hover {
+    background-color: transparent;
+}
+
+
+@media (max-width: 800px)
+{
+    .sidebar{
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        
+    }
+
+    .contenu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: center;
+        margin-left: -40px;
+    }
+    
+    .goblin {
+        margin-top: 30px;
+       width: 2%;
+       height: auto;
+       
+       
+    }
+
+        .burger {
+            display: block;
+            /* Afficher le bouton burger lorsque l'écran est plus petit que 800px */
+        }
+    
+        .menu {
+            display: none;
+            /* Masquer le menu par défaut */
+        }
+    
+        .menu.active {
+            display: block;
+            /* Afficher le menu lorsque la classe "active" est ajoutée */
+        }
+}
+    
+
+        
+
+

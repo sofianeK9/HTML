@@ -1,0 +1,124 @@
+html,
+body {
+  background: linear-gradient(
+    245.59deg,
+    #4d9559 0%,
+    #38703d 28.53%,
+    #133917 75.52%
+  );
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: xx-large;
+}
+
+.container p {
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: larger;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: xx-large;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.class {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+
+.bloc {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.contain {
+  width: 23%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Permanent Marker", cursive;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .contain {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bloc {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bloc {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .contain {
+    width: 100%;
+  }
+}
