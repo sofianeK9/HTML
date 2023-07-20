@@ -67,6 +67,7 @@ h2 {
 
 img {
   width: 350px;
+  border-radius: 0.5rem;
   height: 350px;
 }
 
