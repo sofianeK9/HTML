@@ -23,6 +23,9 @@ html, body {
     /* Afficher le menu par défaut */
 }
 
+
+
+
 .burger {display: none;
     cursor: pointer;
 }
