@@ -1,0 +1,154 @@
+html,
+body {
+  background: linear-gradient(
+    245.59deg,
+    #4d9559 0%,
+    #38703d 28.53%,
+    #133917 75.52%
+  );
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.contenu {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact {
+    flex-basis: 30%;
+    margin-top: 40px;
+    font-size: x-large;
+  }
+  
+  
+
+.image {
+    flex-basis: 60%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.image img {
+    width: 800px;
+    height: auto;
+}
+
+
+label {
+  display: inline-block;
+  width: 100px; 
+  text-align: right;
+  margin-right: 10px; 
+}
+
+input[type="text"],
+textarea {
+  display: inline-block;
+  width: 200px; 
+}
+
+textarea {
+  vertical-align: top;
+}
+
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto; 
+}
+
+
+
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contain {
+  width: 23%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Permanent Marker", cursive;
+}
+
+
+
+@media (max-width: 1200px) {
+  .contenu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  .image img {
+    width: 500px;
+    margin-right: -50px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .contain {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bloc {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bloc {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .contain {
+    width: 100%;
+  }
+}
+
+
