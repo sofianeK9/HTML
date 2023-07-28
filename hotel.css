@@ -1,69 +1,57 @@
-html, body {
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
-    color: white;
-    
+html,
+body {
+  background: linear-gradient(
+    245.59deg,
+    #4d9559 0%,
+    #38703d 28.53%,
+    #133917 75.52%
+  );
+  color: white;
 }
 
 .header {
-   display: flex;
-   justify-content: space-between;
-   position: relative;
-   z-index: 999;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header a {
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: x-large;
-    font-weight:bold;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 20px;
 }
-.menu {
-    display: block;
-    /* Afficher le menu par défaut */
-}
-
-.burger {display: none;
-    cursor: pointer;
+h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
 }
 
+.contenu {
+  margin: 50px;
+}
 
+.images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 130px;
+}
 
+img {
+  width: 300px;
+}
 
+h3 {
+  font-size: x-large;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p {
+  font-size: larger;
+}
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 100%;
 }
 
 .contain {
@@ -76,6 +64,13 @@ html, body {
 
 h3 {
   font-family: "Permanent Marker", cursive;
+}
+
+@media (max-width: 800px) {
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1024px) {
