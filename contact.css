@@ -22,6 +22,13 @@ body {
   margin: 20px;
 }
 
+.header a:hover {
+    background-color: rgb(132, 185, 132);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+
 .contenu {
     display: flex;
     margin-top: 30px;

@@ -18,9 +18,16 @@ html, body {
     font-size: x-large;
     font-weight:bold;
 }
+
+.header a:hover {
+    background-color: rgb(132, 185, 132);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+
 .menu {
     display: block;
-    /* Afficher le menu par défaut */
 }
 
 
@@ -103,10 +110,10 @@ flex-grow: 1;
     color: white;
     font-size: x-large;
     background-color: rgb(132, 185, 132);
-        border-radius: 30px;
-        margin: 30px;
-        margin-left: -10px;
-        padding: 18px;
+    border-radius: 30px;
+     margin: 30px;
+     margin-left: -10px;
+     padding: 18px;
 }
 
 .button a:hover {
