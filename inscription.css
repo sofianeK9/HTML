@@ -28,11 +28,33 @@ html, body {
 
 .menu {
     display: block;
-    /* Afficher le menu par défaut */
 }
 
-.burger {display: none;
+.menu a {
+    margin: 10px;
+}
+
+.burger {
+    display: none;
     cursor: pointer;
+}
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(132, 185, 132);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
 }
 
 
@@ -40,6 +62,11 @@ html, body {
     display: flex;
     display: block;
     margin-top: 50px;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+
 }
 
 p {
@@ -150,6 +177,24 @@ h3 {
     flex-wrap: wrap;
     width: 75%;
   }
+  .burger {
+            display: block;
+           
+        }
+    
+  .menu {
+            display: none;
+            
+        }
+    
+  .menu.active {
+            display: block;
+            
+        }
+
+        .formulaire {
+          width: 20%;
+        }
 }
 
 @media (max-width: 500px) {

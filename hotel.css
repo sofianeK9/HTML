@@ -1,25 +1,22 @@
-html,
-body {
-  background: linear-gradient(
-    245.59deg,
-    #4d9559 0%,
-    #38703d 28.53%,
-    #133917 75.52%
-  );
-  color: white;
+html, body {
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    color: white;
+    
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   z-index: 999;
 }
 
 .header a {
-  text-decoration: none;
-  color: white;
-  font-size: x-large;
-  font-weight: bold;
-  margin: 20px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight:bold;
 }
 
 .header a:hover {
@@ -28,6 +25,38 @@ body {
     border-radius: 0.5rem;
     padding: 5px;
 }
+
+.menu {
+    display: block;
+}
+
+.menu a {
+    margin: 10px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(132, 185, 132);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
 
 h1 {
   text-align: center;
@@ -79,6 +108,20 @@ h3 {
     display: flex;
     flex-wrap: wrap;
   }
+  .burger {
+            display: block;
+           
+        }
+    
+  .menu {
+            display: none;
+            
+        }
+    
+  .menu.active {
+            display: block;
+            
+        }
 }
 
 @media (max-width: 1024px) {

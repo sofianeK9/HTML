@@ -3,6 +3,9 @@ html, body {
     color: white;
     
 }
+.audio-player {
+    display: none;
+}
 
 .header {
    display: flex;
@@ -30,11 +33,24 @@ html, body {
     display: block;
 }
 
+.menu a {
+    margin: 10px;
+}
 
-
-
-.burger {display: none;
+.burger {
+    display: none;
     cursor: pointer;
+}
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(132, 185, 132);
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .line {
@@ -151,17 +167,17 @@ flex-grow: 1;
 
         .burger {
             display: block;
-            /* Afficher le bouton burger lorsque l'écran est plus petit que 800px */
+           
         }
     
         .menu {
             display: none;
-            /* Masquer le menu par défaut */
+            
         }
     
         .menu.active {
             display: block;
-            /* Afficher le menu lorsque la classe "active" est ajoutée */
+            
         }
 }
     
