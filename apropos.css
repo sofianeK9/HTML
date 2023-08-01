@@ -112,6 +112,10 @@ img {
   width: 75%;
 }
 
+.footer-container a {
+  text-decoration: none;
+}
+
 .contain {
   width: 23%;
   display: flex;
