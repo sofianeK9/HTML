@@ -3,6 +3,10 @@ html, body {
     color: white;
     
 }
+#clock {
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+}
 
 .header {
    display: flex;

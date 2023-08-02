@@ -4,6 +4,11 @@ html, body {
     
 }
 
+#clock {
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+}
+
 .header {
    display: flex;
    justify-content: space-between;
