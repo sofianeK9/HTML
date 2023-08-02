@@ -1,4 +1,6 @@
 
+// Menu burger :
+
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
 
@@ -20,4 +22,5 @@ audio.addEventListener("loadedmetadata", Musique)
 function Musique() {
   audio.play();
 }
+
 

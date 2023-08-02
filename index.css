@@ -62,7 +62,7 @@ html, body {
 
 .sidebar {
    position: absolute;
-   top: 500px;
+   top: 400px;
    margin-left: 25px;
    flex-basis: 5%;
 }
@@ -135,6 +135,7 @@ flex-grow: 1;
 .button a:hover {
     background-color: transparent;
 }
+
 
 
 @media (max-width: 800px)

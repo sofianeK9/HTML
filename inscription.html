@@ -41,25 +41,31 @@
 
 
    <h2>Formulaire d'inscription au jeu Goblin</h2>
-<form action="#">
+<form id="monFormulaire">
   <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
 
   <fieldset>
     <legend>Contact</legend>
       <label for="nom">Nom <em>*</em></label>
       <input id="nom" placeholder="Nom" autofocus="" required=""><br>
+      <span id="nomErreur" style="color: red; display: none;">Le nom est obligatoire.</span>
+
 
       <label for="telephone">Telephone</label>
-      <input id="telephone" type="tel" placeholder="07xxxxxxxx" pattern="06[0-9]{8}"><br>
+      <input id="telephone" type="tel" placeholder="07xxxxxxxx" pattern="07[0-9]{8}"><br>
+      <span id="telephoneErreur" style="color : red; dispaly: none;"></span>
 
       <label for="email">Email <em>*</em></label>
-      <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"><br>
+      <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@gmail.com"><br>
+      <span id="emailErreur" style="color: red; display: none;">Veuillez entrer une adresse email valide.</span>
 
       <label for="age">Pseudo<em>*</em></label>
-      <input id="nom" placeholder="Nom" autofocus="" required=""><br>
+      <input id="pseudo" placeholder="pseudo" autofocus="" required=""><br>
+      <span id="pseudoErreur" style="color : red; display: none;"></span>
 
       <label for="ville">Ville</label>
       <input type="text" id="ville" placeholder="Ville">
+      <span id="villeErreur" style="color : red; display: none;"></span>
 
       <label for="date">Date de naissance <em>*</em> </label>
       <input type="date" id="date">
