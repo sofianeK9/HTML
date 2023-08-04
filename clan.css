@@ -114,7 +114,7 @@ img {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 90%;
 }
 .footer-container a {
   text-decoration: none;
