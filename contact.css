@@ -4,6 +4,10 @@ html, body {
     
 }
 
+.audio-player {
+  display: none;
+}
+
 .header {
    display: flex;
    justify-content: space-between;

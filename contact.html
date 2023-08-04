@@ -8,6 +8,11 @@
     <title>Contact</title>
   </head>
   <body>
+
+     <audio id="background-audio" class="audio-player" controls loop>
+  <source src="/17 The Return Of The King.mp3" type="audio/mpeg">
+</audio>
+
     <div class="header">
       <div class="logo">
         <a href="logobhn" alt="logo">KS</a>
@@ -41,17 +46,22 @@
 
       <div class="contact">
         <h1>Contactez-nous !</h1>
-        <form action="formulaire">Formulaire de contact :</form> <br>
+        <form id="formulaire-contact" action="formulaire">Formulaire de contact :</form> <br>
         <fieldset>
             <label for="nom">Nom : </label>
             <input type="text" id="nom" name="nom" placeholder="Nom"> <br><br>
+
             <label for="prenom">Prénom : </label>
             <input type="text" id="prenom" name="prenom" placeholder="prenom"> <br> <br>
+
             <label for="mail"> E-mail : </label>
             <input type="text" id="email" name="email" placeholder="Adresse e-mail"> <br> <br>
+
             <label for="texte">Votre message :</label>
             <textarea name="texte" id="texte" cols="30" rows="5" placeholder="Entrez votre message :"></textarea>
+
             <button type="submit">Envoyer</button>
+
         </fieldset>
       </div>
 

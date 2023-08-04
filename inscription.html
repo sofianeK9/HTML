@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="/inscription.css" />
   </head>
   <body>
+
+   
+    <audio id="background-audio" class="audio-player" controls loop>
+  <source src="/17 The Return Of The King.mp3" type="audio/mpeg">
+</audio>
+
     <div class="header">
       <div class="logo">
         <a href="logobhn" alt="logo">KS</a>
@@ -59,7 +65,7 @@
       <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@gmail.com"><br>
       <span id="emailErreur" style="color: red; display: none;">Veuillez entrer une adresse email valide.</span>
 
-      <label for="age">Pseudo<em>*</em></label>
+      <label for="pseudo">Pseudo<em>*</em></label>
       <input id="pseudo" placeholder="pseudo" autofocus="" required=""><br>
       <span id="pseudoErreur" style="color : red; display: none;"></span>
 
