@@ -1,4 +1,3 @@
-
 // Menu burger :
 
 const burger = document.querySelector(".burger");
@@ -8,21 +7,19 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-
 // Musique de fond :
 
 // Lorsque le document HTML est chargé, la fonction Musique se lance.
-document.addEventListener("DOMContentLoaded", Musique) 
+document.addEventListener("DOMContentLoaded", Musique);
 // On stocke notre element HTML dans une variable qu'on récupére avec l'ID
-var audio = document.getElementById("background-audio")
+var audio = document.getElementById("background-audio");
 // On utilise un événement écouteur qu'on applique sur audio, l'événement est déclenché lorsque les données de l'audio sont chargées. on créé une fonction musique
 // qui lancera la musique(audio) de facon automatique
-audio.addEventListener("loadedmetadata", Musique)
+audio.addEventListener("loadedmetadata", Musique);
 
 function Musique() {
   audio.play();
 }
-
 
 // Horloge
 
@@ -45,17 +42,15 @@ function updateClock() {
 // Met à jour l'heure toutes les secondes
 setInterval(updateClock, 1000);
 
-
-
 // Recuperation des informations saisies par le visiteur du site dans le forumlaire contact qui s'afficheront dans la console
-document.addEventListener('DOMContentLoaded', function () {
-  const formulaireContact = document.getElementById('formulaire-contact');
-  const nomContact = document.getElementById('nom');
-  const prenomContact = document.getElementById('prenom');
-  const emailContact = document.getElementById('email');
-  const messageContact = document.getElementById('texte');
+document.addEventListener("DOMContentLoaded", function () {
+  const formulaireContact = document.getElementById("formulaire-contact");
+  const nomContact = document.getElementById("nom");
+  const prenomContact = document.getElementById("prenom");
+  const emailContact = document.getElementById("email");
+  const messageContact = document.getElementById("texte");
 
-  formulaireContact.addEventListener('submit', function (e) {
+  formulaireContact.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const name = nomContact.value;
@@ -64,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const message = messageContact.value;
 
     console.log(`Nom : ${name}`);
-    console.log(`Prenom : ${ firstname }`);
+    console.log(`Prenom : ${firstname}`);
     console.log(`Email : ${email}`);
     console.log(`Message : ${message}`);
   });
@@ -114,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(`Sexe : ${sexe}`);
     console.log(`Clan : ${clan}`);
     console.log(`Comments : ${comments}`);
-
 
     // OU les stocker dans le Local storage:
     // Création d'un objet pour y stocker les données

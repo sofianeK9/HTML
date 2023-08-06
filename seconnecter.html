@@ -3,23 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/contact.css" />
-    <title>Contact</title>
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="/seconnecter.css">
   </head>
   <body>
-
-     <audio id="background-audio" class="audio-player" controls loop>
-  <source src="/17 The Return Of The King.mp3" type="audio/mpeg">
-</audio>
-
     <div class="header">
       <div class="logo">
         <a href="logobhn" alt="logo">KS</a>
       </div>
-
-      
-
+      <div id="clock"></div>
       <div class="burger">
         <div class="line"></div>
         <div class="line"></div>
@@ -38,40 +30,34 @@
       </div>
     </div>
 
+ <div class="contenu">
+  <div class="image">
+    <img src="/images/goblin.png" alt="image-de-goblin">
+  </div>
 
-
-    <div class="contenu">
-
-      <div class="image">
-        <img src="/images/goblin.png" alt="image-de-goblin">
-      </div>
-
-      <div class="contact">
-        <h1>Contactez-nous !</h1>
-        <form id="formulaire-contact" action="formulaire">Formulaire de contact :</form> <br>
-        <fieldset>
-            <label for="nom">Nom : </label>
-            <input type="text" id="nom" name="nom" placeholder="Nom"> <br><br>
-
-            <label for="prenom">Prénom : </label>
-            <input type="text" id="prenom" name="prenom" placeholder="prenom"> <br> <br>
-
-            <label for="mail"> E-mail : </label>
-            <input type="text" id="email" name="email" placeholder="Adresse e-mail"> <br> <br>
-
-            <label for="texte">Votre message :</label>
-            <textarea name="texte" id="texte" cols="30" rows="5" placeholder="Entrez votre message :"></textarea>
-
-            <button type="submit">Envoyer</button>
-
-        </fieldset>
-      </div>
-
+  <div class="connexion">
+    <h1>Connectez-vous !</h1>
+    <div class="content">
+      <h2>Se connecter</h2>
+      <form action="connexion" method="post">
+        <div class="inputBox">
+          <input type="text" required> <i>Nom d'utilisateur</i>
+        </div>
+        <div class="inputBox">
+          <input type="password" required> <i>Mot de passe</i>
+        </div>
+        <br>
+        <div class="links"><a href="#">Mot de passe oublié ?</a></div>
+        <div class="inputBox">
+          <input type="submit" value="Se connecter">
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
 
-
-           <footer class="footer-container">
+  <footer class="footer-container">
             <div class=" contain container1">
              <h3>Adresse</h3>
              <p>Zac des Lilas <br> 75 000 Aire des Parchemins <br>Paris</p>
@@ -92,7 +78,8 @@
              <br>
             <button type="button"> <a href="/contact.html">Contact</button>
             </div>
-        </footer>
-        <script src="/goblin.js"></script>
+  </footer>
+<script src="/goblin.js"></script>
   </body>
 </html>
+

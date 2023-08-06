@@ -9,10 +9,6 @@ body {
   color: white;
 }
 
-.audio-player {
-  display: none;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,13 +61,14 @@ body {
   background-color: white;
   margin: 6px 0;
 }
+
 .contenu {
   display: flex;
   margin-top: 30px;
 }
 
-.contact {
-  flex-basis: 30%;
+.connexion {
+  flex-basis: 40%;
   margin-top: 40px;
   font-size: x-large;
 }
@@ -87,27 +84,77 @@ body {
   height: auto;
 }
 
-label {
-  display: inline-block;
-  width: 100px;
-  text-align: right;
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  align-items: center;
+}
+h1 {
+  margin-left: 40px;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
-input[type="text"],
-textarea {
-  display: inline-block;
-  width: 200px;
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
 }
 
-textarea {
-  vertical-align: top;
+.inputBox i {
+  transform: translateY(-50%);
+  left: 10px;
+  color: #999;
 }
 
-button[type="submit"] {
-  display: block;
-  margin: 20px auto;
+.links {
+  text-align: center;
 }
+
+.links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.inputBox input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.inputBox input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -136,8 +183,15 @@ h3 {
     flex-wrap: wrap;
   }
 
-  .contact {
+  .connexion {
     align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .image img {
+    width: 500px;
+    margin-right: -50px;
   }
 }
 
