@@ -76,6 +76,11 @@ body {
   font-size: x-large;
 }
 
+h1 {
+  font-family: "Permanent Marker", cursive;
+
+}
+
 .image {
   flex-basis: 60%;
   height: auto;
