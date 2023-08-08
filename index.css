@@ -1,17 +1,17 @@
 html,
 body {
-  background: linear-gradient(
-    245.59deg,
-    #4d9559 0%,
-    #38703d 28.53%,
-    #133917 75.52%
-  );
+  background: linear-gradient(245.59deg,
+      #4d9559 0%,
+      #38703d 28.53%,
+      #133917 75.52%);
   color: white;
 }
+
 #clock {
   font-family: "Permanent Marker", cursive;
   font-size: x-large;
 }
+
 .audio-player {
   display: none;
 }
@@ -100,13 +100,16 @@ body {
 h5 {
   font-size: x-large;
 }
+
 h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 100px;
 }
+
 h4 {
   font-size: xx-large;
 }
+
 p {
   font-size: x-large;
 }
@@ -140,11 +143,12 @@ p {
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .contenu {
     flex-wrap: wrap;
     margin-left: 10px;
   }
+
   .text {
     margin-left: 200px;
   }
@@ -152,6 +156,7 @@ p {
   .goblin {
     margin-top: 20px;
   }
+
   .burger {
     display: block;
   }
@@ -207,5 +212,5 @@ p {
   .text {
     margin-left: 50px;
   }
- 
+
 }

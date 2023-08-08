@@ -170,12 +170,10 @@ h3 {
 @media (max-width: 1024px) {
   .footer-container {
     flex-wrap: wrap;
-    
   }
   .contain {
     width: 50%;
   }
-  
 }
 
 @media (max-width: 800px) {
@@ -200,16 +198,15 @@ h3 {
   }
 
   #monFormulaire {
-   width: 200px !important;
-   position: relative;
-   display: inline-block; 
+    width: 200px !important;
+    position: relative;
+    display: inline-block;
   }
 
   fieldset {
     width: auto;
   }
 }
-
 
 @media (max-width: 500px) {
   .bloc {
@@ -224,4 +221,3 @@ h3 {
     width: 100%;
   }
 }
-

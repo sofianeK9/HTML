@@ -17,9 +17,9 @@ var audio = document.getElementById("background-audio");
 // qui lancera la musique(audio) de facon automatique
 audio.addEventListener("loadedmetadata", Musique);
 
-// function Musique() {
-//   audio.play();
-// }
+function Musique() {
+  audio.play();
+}
 
 // Horloge
 
