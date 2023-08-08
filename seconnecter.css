@@ -181,11 +181,35 @@ h3 {
   .contenu {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .connexion {
     align-items: center;
   }
+  .footer-container {
+    width: 100%;
+  }
+  .bloc {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -205,7 +229,7 @@ h3 {
 @media (max-width: 1024px) {
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 50%;
@@ -234,16 +258,27 @@ h3 {
   }
 }
 
+
 @media (max-width: 500px) {
+  .connexion {
+    margin-left: 30px;
+  }
+  .image {
+    margin-right: 30px;
+  }
+  .image img {
+    margin-left: -38.5px;
+  }
   .bloc {
     flex-direction: column;
   }
 
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 100%;
   }
 }
+

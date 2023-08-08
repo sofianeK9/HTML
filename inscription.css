@@ -170,11 +170,12 @@ h3 {
 @media (max-width: 1024px) {
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    
   }
   .contain {
     width: 50%;
   }
+  
 }
 
 @media (max-width: 800px) {
@@ -198,10 +199,17 @@ h3 {
     display: block;
   }
 
-  .formulaire {
-    width: 20%;
+  #monFormulaire {
+   width: 200px !important;
+   position: relative;
+   display: inline-block; 
+  }
+
+  fieldset {
+    width: auto;
   }
 }
+
 
 @media (max-width: 500px) {
   .bloc {
@@ -210,9 +218,10 @@ h3 {
 
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 100%;
   }
 }
+

@@ -107,6 +107,9 @@ textarea {
 button[type="submit"] {
   display: block;
   margin: 20px auto;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: white;
 }
 .footer-container {
   display: flex;
@@ -137,7 +140,8 @@ h3 {
   }
 
   .contact {
-    align-items: center;
+    flex-basis: 50%;
+    margin-left: 200px;
   }
 }
 
@@ -155,6 +159,10 @@ h3 {
   }
   .contain {
     width: 50%;
+  }
+  .contact {
+    flex-basis: 50%;
+    margin-left: 180px;
   }
 }
 
@@ -181,15 +189,22 @@ h3 {
 }
 
 @media (max-width: 500px) {
+  .image img {
+    margin-left: -40px;
+  }
   .bloc {
     flex-direction: column;
   }
 
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 100%;
+  }
+
+  .contact {
+    margin-left: 80px;
   }
 }

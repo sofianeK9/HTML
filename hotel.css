@@ -154,6 +154,7 @@ h3 {
   }
 }
 
+
 @media (max-width: 500px) {
   .bloc {
     flex-direction: column;
@@ -161,7 +162,7 @@ h3 {
 
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 100%;
