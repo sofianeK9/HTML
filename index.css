@@ -205,6 +205,9 @@ p {
   .menu.active {
     display: block;
   }
+  .button a {
+    padding: 14px;
+  }
 }
 
 
@@ -219,6 +222,9 @@ p {
   p {
         font-size: 1.2rem;
 
+  }
+  .button a {
+    padding: 14px;
   }
 
 }
