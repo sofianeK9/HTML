@@ -210,8 +210,9 @@ h3 {
   .contenu {
     margin-left: -40px;
   }
-  .image img {
-    margin-left: -35px;;
+  .image  img {
+   width : 370px;
+  margin-left: 50px;
   }
   h1 {
     font-size: 1.5rem;
