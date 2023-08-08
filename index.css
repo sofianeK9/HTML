@@ -185,7 +185,7 @@ p {
     flex-grow: 1;
     flex-shrink: 1;
     justify-content: center;
-    margin-left: -39px;
+    margin-left: -20px;
   }
 
   .goblin {
@@ -210,7 +210,7 @@ p {
 
 @media (max-width : 500px) {
   .text {
-    margin-left: 52px;
+    margin-left: 22px;
   }
   h1 {
         font-size: 4.9rem;
