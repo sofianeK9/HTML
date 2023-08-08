@@ -137,6 +137,7 @@ h3 {
   .contenu {
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   .contact {
@@ -163,6 +164,17 @@ h3 {
   .contact {
     flex-basis: 50%;
     margin-left: 180px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
   }
 }
 

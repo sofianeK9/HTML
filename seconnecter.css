@@ -187,16 +187,14 @@ h3 {
   .connexion {
     align-items: center;
   }
-  .footer-container {
-    width: 100%;
-  }
+  
   .bloc {
     flex-direction: column;
   }
 
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%
   }
   .burger {
     display: block;
