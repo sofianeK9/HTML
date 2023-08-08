@@ -184,7 +184,12 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .content {
+    width: 200px;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
   .connexion {
     align-items: center;
   }
@@ -256,16 +261,17 @@ h3 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .image img {
+    width : 340px;
+  }
+   .image {
+    margin-right: 30px;
+  }
   .connexion {
     margin-left: 30px;
   }
-  .image {
-    margin-right: 30px;
-  }
-  .image img {
-    margin-left: -38.5px;
-  }
+ 
   .bloc {
     flex-direction: column;
   }
