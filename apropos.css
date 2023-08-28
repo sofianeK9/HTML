@@ -66,6 +66,22 @@ body {
   margin: 6px 0;
 }
 
+#back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: rgba(1, 44, 1, 0.726);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#back-to-top-button:hover{
+  background-color: #0056b3;
+}
+
 .container {
   margin-top: 70px;
 }
@@ -137,10 +153,10 @@ h3 {
   font-family: "Permanent Marker", cursive;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer-container {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
   }
   .contain {
     width: 50%;

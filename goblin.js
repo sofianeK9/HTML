@@ -17,9 +17,9 @@ var audio = document.getElementById("background-audio");
 // qui lancera la musique(audio) de facon automatique
 // audio.addEventListener("loadedmetadata", Musique);
 
-// function Musique() {
-//   audio.play();
-// }
+function Musique() {
+  audio.play();
+}
 
 // Horloge
 
@@ -129,4 +129,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Données du formulaire enregistrées dans le Local Storage");
   });
+});
+
+// Boutton revenir en haut
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById("back-to-top-button");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+
+// Effet Mouse Event
+
+const mousemove = document.querySelector(".mousemove")
+
+window.addEventListener('mousemove', (e) => {
+  mousemove.style.left = e.pageX + "px"
+  mousemove.style.top = e.pageY + "px"
+});
+
+mousemove.addEventListener('mousedown', () => {
+  mousemove.style.transform = "scale(2) translate(-50%, -50%)"
+});
+
+mousemove.addEventListener('mouseup', () => {
+  mousemove.style.transform = "scale(1) translate(-50%, -50%)";
+  mousemove.style.border = "2px solid teal";
 });
